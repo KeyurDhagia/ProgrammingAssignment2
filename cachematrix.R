@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Saving the inverse of given matrix as cache for quick access and to avoid recomputation
 
-## Write a short comment describing this function
+## Saving the matrix in a different environment
 
 makeCacheMatrix <- function(x = matrix()) {
   matinv <- NULL
@@ -18,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Fetching the inverse matrix stored as cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -32,4 +31,3 @@ cacheSolve <- function(x, ...) {
   x$set.inv.mat(matinv)
   matinv
 }
-# 
